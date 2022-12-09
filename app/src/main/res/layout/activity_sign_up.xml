@@ -7,30 +7,10 @@
     android:padding="20dp"
     android:orientation="vertical"
     android:background="@drawable/background"
-    tools:context=".MainActivity">
-    <!--   line 7: layout padding is change the EditText Size.-->
-   <EditText
-       android:id="@+id/edit_name"
-       android:background="@drawable/edittext_color"
-       android:hint="@string/full_name"
-       android:padding="10dp"
-       android:layout_width="match_parent"
-       android:layout_height="50dp"
-       />
+    tools:context=".SignUp_Activity">
 
     <EditText
-        android:id="@+id/edit_mobile"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/edittext_color"
-        android:hint="@string/mobile_number"
-        android:maxLength="11"
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        />
-
-    <EditText
-        android:id="@+id/edit_email"
+        android:id="@+id/edit_email2"
         android:layout_marginTop="10dp"
         android:background="@drawable/edittext_color"
         android:hint="@string/email_address"
@@ -39,7 +19,7 @@
         android:layout_height="50dp"
         />
     <EditText
-        android:id="@+id/edit_password"
+        android:id="@+id/edit_password2"
         android:layout_marginTop="10dp"
         android:background="@drawable/edittext_color"
         android:hint="@string/password"
@@ -49,20 +29,21 @@
         android:layout_height="50dp"
         />
     <Button
-        android:id="@+id/signup"
+        android:id="@+id/login"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
-        android:text="@string/sign_up"
+        android:text="@string/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <TextView
-        android:id="@+id/signup3"
+        android:id="@+id/signup2"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/login1"/>
+        android:text="@string/sign_up22"/>
+
 
 
 </LinearLayout>
