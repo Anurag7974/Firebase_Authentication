@@ -9,4 +9,5 @@
     <string name="sign_up2">Sign Up</string>
     <string name="sign_up22">Sign Up</string>
     <string name="login1">Login</string>
+    <string name="forget_password">Forget Password</string>
 </resources>
