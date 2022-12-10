@@ -18,7 +18,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 
-
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
@@ -41,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
         binding.signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String name = binding.editName.getText().toString();
-                String number = binding.editMobile.getText().toString();
-                String email = binding.editEmail.getText().toString().trim(); // trim() it's used the no space are there.
-                String password = binding.editPassword.getText().toString();
+                String name = binding.fullName.getText().toString();
+                String number = binding.phoneNumber.getText().toString();
+                String email = binding.emailAddress.getText().toString().trim(); // trim() it's used the no space are there.
+                String password = binding.password.getText().toString();
 
                 progressDialog.show();
                 firebaseAuth.createUserWithEmailAndPassword(email, password)
@@ -66,6 +65,14 @@ public class MainActivity extends AppCompatActivity {
                                 progressDialog.cancel();
                             }
                         });
+            }
+        });
+
+        // switch signActivity to LoginActivity
+        binding.goToLoginActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this,SignUp_Activity.class));
             }
         });
     }

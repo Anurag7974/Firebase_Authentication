@@ -1,7 +1,7 @@
 package com.example.firebase_authentication;
 
 public class UserModel {
-    private String name, number,email;
+    private String name, number, email;
 
     public UserModel(){
 
@@ -21,7 +21,7 @@ public class UserModel {
      }
 
     public String getNumber(){
-        return name;
+        return number;
     }
     public void setNumber(String number){
         this.name = number;

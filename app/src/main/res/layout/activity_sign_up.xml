@@ -10,7 +10,7 @@
     tools:context=".SignUp_Activity">
 
     <EditText
-        android:id="@+id/edit_email2"
+        android:id="@+id/emailAddress"
         android:layout_marginTop="10dp"
         android:background="@drawable/edittext_color"
         android:hint="@string/email_address"
@@ -19,7 +19,7 @@
         android:layout_height="50dp"
         />
     <EditText
-        android:id="@+id/edit_password2"
+        android:id="@+id/password"
         android:layout_marginTop="10dp"
         android:background="@drawable/edittext_color"
         android:hint="@string/password"
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
     <TextView
-        android:id="@+id/signup2"
+        android:id="@+id/goToSignUpActivity"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:textStyle="bold"
@@ -45,7 +45,7 @@
         android:text="@string/sign_up22"/>
 
     <TextView
-        android:id="@+id/forgetpassword"
+        android:id="@+id/forgetPassword"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:textStyle="bold"
